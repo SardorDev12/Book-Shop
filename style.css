@@ -46,7 +46,17 @@ header {
 .navbar a {
   text-decoration: none;
   color: white;
+  transition: all 0.3s ease-in-out;
 }
+
+.navbar a:hover {
+  color: orange;
+}
+
+.navbar li:first-child > a {
+  color: orange;
+}
+
 /* /navbar */
 
 /* main */
