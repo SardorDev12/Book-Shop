@@ -1,7 +1,7 @@
-//body
+//BODY
 const body = document.body;
 
-//header
+//HEADER
 const header = document.createElement("header");
 body.appendChild(header);
 
@@ -16,7 +16,7 @@ imgLink.appendChild(logo);
 logoDiv.appendChild(imgLink);
 header.appendChild(logoDiv);
 
-//nav
+//NAV
 const nav = document.createElement("nav");
 nav.classList.add("navbar");
 const ul = document.createElement("ul");
@@ -31,3 +31,29 @@ for (let i = 0; i <= 4; i++) {
 }
 nav.appendChild(ul);
 header.appendChild(nav);
+
+//MAIN
+//background image
+const main = document.createElement("main");
+const mainBgImage = document.createElement("img");
+mainBgImage.src = "./Images/bg-image 1.png";
+main.appendChild(mainBgImage);
+const headerHeight = header.clientHeight;
+main.style.height = `calc(100vh - ${headerHeight}px`;
+body.appendChild(main);
+
+//main title
+const titleDiv = document.createElement("div");
+titleDiv.classList.add("main-title");
+const title1 = document.createElement("div");
+title1.classList.add("title1");
+const title1Img = document.createElement("img");
+title1Img.src = "./Images/logo.png";
+title1.appendChild(title1Img);
+const title2 = document.createElement("h1");
+title2.innerText = "KUTUBXONASI";
+titleDiv.appendChild(title1);
+titleDiv.appendChild(title2);
+main.appendChild(titleDiv);
+
+//SHOPPING SECTION
