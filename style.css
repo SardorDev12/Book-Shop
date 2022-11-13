@@ -100,3 +100,14 @@ main::after {
   color: #fff;
 }
 /* /main */
+
+/* shopping section */
+.shopping-section {
+  width: 100%;
+  height: 100vh;
+}
+
+.shopping-bg-image {
+  width: 100%;
+}
+/* /shopping section */

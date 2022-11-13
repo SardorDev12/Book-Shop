@@ -57,3 +57,13 @@ titleDiv.appendChild(title2);
 main.appendChild(titleDiv);
 
 //SHOPPING SECTION
+//background
+const shopping = document.createElement("section");
+shopping.classList.add("shopping-section");
+const shoppingBgImage = document.createElement("div");
+shoppingBgImage.classList.add("shopping-bg-image");
+const shoppingImage = document.createElement("img");
+shoppingImage.src = "./Images/bg-image 2.png";
+shoppingBgImage.appendChild(shoppingImage);
+shopping.appendChild(shoppingBgImage);
+body.appendChild(shopping);
