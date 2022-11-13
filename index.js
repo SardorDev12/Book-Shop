@@ -67,3 +67,33 @@ shoppingImage.src = "./Images/bg-image 2.png";
 shoppingBgImage.appendChild(shoppingImage);
 shopping.appendChild(shoppingBgImage);
 body.appendChild(shopping);
+//books
+const booksDiv = document.createElement("div");
+booksDiv.classList.add("books-div");
+shopping.appendChild(booksDiv);
+//show more
+const showMore = document.createElement("div");
+showMore.classList.add("show-more");
+const showMoreTitle = document.createElement("h2");
+showMoreTitle.classList.add("show-more-title");
+showMoreTitle.innerText = "Show More";
+showMore.appendChild(showMoreTitle);
+shopping.appendChild(showMore);
+//cart
+const cart = document.createElement("div");
+cart.classList.add("cart");
+const cartTitle = document.createElement("p");
+cartTitle.innerText = "CART";
+cartTitle.classList.add("cart-title");
+const cartObjects = document.createElement("h1");
+cartObjects.classList.add("cart-objects");
+cart.appendChild(cartObjects);
+cart.appendChild(cartTitle);
+shopping.appendChild(cart);
+//cart modal
+const cartModal = document.createElement("div");
+cartModal.classList.add("cart-modal");
+cartModal.classList.add("hide-modal");
+shopping.appendChild(cartModal);
+
+export default { booksDiv, showMore };

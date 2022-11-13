@@ -105,9 +105,150 @@ main::after {
 .shopping-section {
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 
 .shopping-bg-image {
   width: 100%;
 }
+
+.books-div,
+.show-more,
+.cart {
+  background-color: #1c0f08;
+  opacity: 0.8;
+  position: absolute;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff;
+}
+.books-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  left: 3rem;
+  top: 2.5rem;
+  width: 50vw;
+  height: 90%;
+  overflow-y: scroll;
+}
+
+.shopping-section h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.show-more {
+  width: 40vw;
+  height: 60vh;
+  right: 3rem;
+  top: 2.5rem;
+}
+
+.cart {
+  padding: 0;
+  width: 5rem;
+  aspect-ratio: 1;
+  position: absolute;
+  right: 3rem;
+  bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.book {
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid brown;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.book-image {
+  width: 100%;
+  height: 60%;
+  z-index: -1;
+}
+
+.about-book {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-header {
+  display: flex;
+  gap: 1rem;
+}
+
+.about-header-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.about-book-title {
+  font-size: 1.5rem;
+}
+
+.about-book-price {
+  font-style: italic;
+  font-size: 1.5rem;
+  color: goldenrod;
+  text-align: right;
+}
+
+.about-header-img {
+  min-width: 120px;
+  max-width: 120px;
+  height: 150px;
+}
+
+.about-desc {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.about-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-btns > button,
+.show-more-btn {
+  background-color: #b97753;
+  padding: 5px;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.cart-modal {
+  width: 80vw;
+  height: 90vh;
+  background-color: #1c0f08;
+  border: 1px solid #fff;
+  position: absolute;
+  top: 2.5rem;
+  left: 3rem;
+  border-radius: 10px;
+}
+
+/* div.hide-modal {
+  display: none;
+} */
 /* /shopping section */
