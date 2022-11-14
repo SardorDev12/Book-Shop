@@ -93,7 +93,24 @@ shopping.appendChild(cart);
 //cart modal
 const cartModal = document.createElement("div");
 cartModal.classList.add("cart-modal");
-cartModal.classList.add("hide-modal");
+cartModal.classList.add("hide");
+const closeCartBtn = document.createElement("button");
+closeCartBtn.classList.add("close-cart");
+closeCartBtn.innerText = "X";
+closeCartBtn.classList.add("hide");
+shopping.appendChild(closeCartBtn);
 shopping.appendChild(cartModal);
-
-export default { booksDiv, showMore };
+//price
+const sumPrice = document.createElement("div");
+sumPrice.classList.add("sum-price");
+const orderPageLink = document.createElement("a");
+orderPageLink.classList.add("order-page-link");
+orderPageLink.setAttribute("href", "./form.html");
+orderPageLink.setAttribute("target", "_blank");
+const order = document.createElement("button");
+order.classList.add("order-btn");
+order.textContent = "ORDER";
+orderPageLink.appendChild(order);
+shopping.appendChild(orderPageLink);
+shopping.appendChild(sumPrice);
+export default { booksDiv, showMore, closeCartBtn, sumPrice, order };
