@@ -237,6 +237,19 @@ main::after {
   font-weight: 500;
 }
 
+.remove-book-btn {
+  padding: 0 5px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-color: red;
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  position: absolute;
+  right: 1rem;
+}
+
 .cart-modal {
   width: 78vw;
   height: 90vh;
@@ -304,6 +317,10 @@ button.hide {
   bottom: 8rem;
 }
 
+.order-btn[disabled] {
+  color: red;
+}
+
 .order-btn {
   padding: 5px 1rem;
   font-size: 1rem;
@@ -312,5 +329,6 @@ button.hide {
   outline: none;
   background-color: goldenrod;
   border-radius: 10px;
+  color: green;
 }
 /* /shopping section */

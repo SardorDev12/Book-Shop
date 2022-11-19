@@ -7,6 +7,7 @@ const houseNumber = document.getElementById("house-number");
 const flatNumber = document.getElementById("flat-number");
 const submitBtn = document.querySelector(".submit-btn");
 const radios = document.querySelectorAll('input[name="payment"]');
+const deliveryInfo = document.querySelector(".delivery-info");
 
 form.addEventListener("submit", (e) => {
   if (
@@ -60,4 +61,10 @@ form.addEventListener("submit", (e) => {
     document.querySelector(".radio-error").textContent = "Invalid Input";
     e.preventDefault();
   }
+  let msg;
+  submitBtn.addEventListener("click", (e) => {
+    msg = `
+    Product will be delivered to ${username.value}, location: ${houseNumber}, ${flatNumber}`;
+  });
+  console.log(msg);
 });
