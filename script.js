@@ -17,7 +17,7 @@ let book = 0;
 const cart = [];
 let sum = 0;
 
-fetch("../books.json")
+fetch("./books.json")
   .then((res) => res.json())
   .then((data) => {
     displayBooksFunc(data);
