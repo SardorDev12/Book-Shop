@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit Form</title>
+    <link rel="stylesheet" href="form.css" />
+    <script src="form.js" defer></script>
+  </head>
+  <body>
+    <div class="bg-image">
+      <img src="../Images/bg-image 2.png" alt="bg-image" />
+    </div>
+    <h1>Delivery Form</h1>
+    <form action="#" id="form" class="form" autocomplete="off">
+      <div class="name">
+        <label for="name">Name</label>
+        <div class="input-div">
+          <input type="text" name="name" id="name" placeholder="name" />
+          <div class="name-error"></div>
+        </div>
+      </div>
+      <div class="surname">
+        <label for="surname">Surname</label>
+        <div class="input-div">
+          <input
+            type="text"
+            name="surname"
+            id="surname"
+            placeholder="surname"
+          />
+          <div class="surname-error"></div>
+        </div>
+      </div>
+      <div class="delivery">
+        <label for="delivery">Delivery Date</label>
+        <div class="input-div">
+          <input type="date" name="delivery" id="delivery" />
+          <div class="date-error"></div>
+        </div>
+      </div>
+      <div class="street">
+        <label for="street">Street</label>
+        <div class="input-div">
+          <input type="text" name="street" id="street" placeholder="street" />
+          <div class="street-error"></div>
+        </div>
+      </div>
+      <div class="house-number">
+        <label for="house-number">House number</label>
+        <div class="input-div">
+          <input
+            type="number"
+            name="house-number"
+            id="house-number"
+            placeholder="house number"
+          />
+          <div class="house-error"></div>
+        </div>
+      </div>
+      <div class="flat-number">
+        <label for="flat-number">Flat number</label>
+        <div class="input-div">
+          <input
+            type="text"
+            name="flat-number"
+            id="flat-number"
+            placeholder="flat number"
+          />
+          <div class="flat-error"></div>
+        </div>
+      </div>
+      <div class="payment">
+        <p>Payment</p>
+        <div>
+          <div>
+            <input name="payment" id="cash" type="radio" />
+            <label for="cash">Cash</label>
+          </div>
+          <div>
+            <input name="payment" id="card" type="radio" />
+            <label for="card">Card</label>
+          </div>
+          <div class="radio-error"></div>
+        </div>
+      </div>
+      <div class="choose-gifts">
+        <p>Choose 2 gifts:</p>
+        <div class="gifts">
+          <div class="pack">
+            <input type="checkbox" name="gift" id="gift-pack" />
+            <label for="gift-pack">pack as a gift,</label>
+          </div>
+          <div class="postcard">
+            <input type="checkbox" name="gift" id="postcard" />
+            <label for="postcard">add postcard,</label>
+          </div>
+          <div class="discount">
+            <input type="checkbox" name="gift" id="discount" />
+            <label for="discount">2% discount,</label>
+          </div>
+          <div class="brand">
+            <input type="checkbox" name="gift" id="branded" />
+            <label for="branded">branded pen or pencil</label>
+          </div>
+        </div>
+      </div>
+      <button class="submit-btn" type="submit">SUBMIT</button>
+    </form>
+  </body>
+</html>

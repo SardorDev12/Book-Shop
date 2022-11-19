@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+.bg-image {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.form {
+  margin-top: 3rem;
+  position: absolute;
+  color: beige;
+  font-size: 1.2rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.form > div {
+  width: 400px;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form input[type="text"],
+input[type="number"],
+input[type="date"] {
+  outline: none;
+  border: 1px solid green;
+  padding: 0.3rem 0.5rem;
+}
+
+.form input::placeholder {
+  color: green;
+}
+
+h1 {
+  font-size: 4rem;
+  position: absolute;
+  top: 1rem;
+  color: beige;
+}
+
+.payment > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 3.7rem;
+}
+
+div.choose-gifts {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.gifts {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-btn {
+  color: green;
+  padding: 0.3rem 0.5rem;
+  font-weight: 500;
+}
+
+.input-div > div {
+  color: red;
+  font-size: 1rem;
+}

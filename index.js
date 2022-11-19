@@ -82,6 +82,9 @@ shopping.appendChild(showMore);
 //cart
 const cart = document.createElement("div");
 cart.classList.add("cart");
+cart.setAttribute("id", "div2");
+cart.setAttribute("ondrop", "drop(event)");
+cart.setAttribute("ondragover", "allowDrop(event))");
 const cartTitle = document.createElement("p");
 cartTitle.innerText = "CART";
 cartTitle.classList.add("cart-title");
@@ -105,7 +108,7 @@ const sumPrice = document.createElement("div");
 sumPrice.classList.add("sum-price");
 const orderPageLink = document.createElement("a");
 orderPageLink.classList.add("order-page-link");
-orderPageLink.setAttribute("href", "./form.html");
+orderPageLink.setAttribute("href", "./Form/form.html");
 orderPageLink.setAttribute("target", "_blank");
 const order = document.createElement("button");
 order.classList.add("order-btn");

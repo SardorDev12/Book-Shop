@@ -78,8 +78,8 @@ fetch("../books.json")
           cartObjects.textContent = `${cart.length}`;
           cartModal.innerHTML += `
           <div class="cart-book">
-          <div class="cart-book-image">
-            <img src="${data[book].imageLink}" alt="${data[book].description}" />
+          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" class="cart-book-image">
+            <img draggable="true" ondragstart="drag(event) src="${data[book].imageLink}" alt="${data[book].description}" />
           </div>
           <div class="cart-book-header">
             <h1>${data[book].author} - ${data[book].title}</h1>
@@ -107,4 +107,18 @@ fetch("../books.json")
       cartModal.classList.add("hide");
       closeCart.classList.add("hide");
     });
+
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      ev.target.appendChild(document.getElementById(data));
+    }
   });
