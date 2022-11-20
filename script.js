@@ -8,10 +8,8 @@ const cartObjects = document.querySelector(".cart-objects");
 const cartModal = document.querySelector(".cart-modal");
 const closeCart = document.querySelector(".close-cart");
 const sumPriceEl = document.querySelector(".sum-price");
-const orderPageLink = document.querySelector(".order-page-link");
-const orderBtn = document.querySelector(".order-btn");
 
-fetch("../books.json")
+fetch("./Json/books.json")
   .then((res) => res.json())
   .then((data) => {
     //Books Catalog
